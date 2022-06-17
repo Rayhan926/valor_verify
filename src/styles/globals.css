@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "GorgaGrotesque-Light";
+  src: url("/fonts/GorgaGrotesque-Light.ttf");
+}
+@font-face {
+  font-family: "GorgaGrotesque-Regular";
+  src: url("/fonts/GorgaGrotesque-Regular.ttf");
+}
+@font-face {
+  font-family: "GorgaGrotesque-Bold";
+  src: url("/fonts/GorgaGrotesque-Bold.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  @apply font-gorga-regular;
+} */
+
+@layer components {
+  .title_60 {
+    @apply text-[60px] leading-[80px] font-gorga-bold text-dark-900;
+  }
+  .title_40 {
+    @apply text-[40px] leading-[52px] font-gorga-bold text-dark-900;
+  }
+  .title_36 {
+    @apply text-[36px] leading-[48px] font-gorga-bold text-dark-900;
+  }
+  .title_32 {
+    @apply text-[32px] leading-[42px] font-gorga-bold text-dark-900;
+  }
+  .title_28 {
+    @apply text-[28px] leading-[38px] font-gorga-bold text-dark-900;
+  }
+  .title_24 {
+    @apply text-[24px] leading-[32px] font-gorga-bold text-dark-900;
+  }
+  .subtitle_light {
+    @apply font-gorga-light text-lg text-dark-800;
+  }
+  .subtitle_normal {
+    @apply font-gorga-regular text-lg text-dark-800;
+  }
+  .subtitle_normal {
+    @apply font-gorga-bold text-lg text-dark-800;
+  }
+  .__input {
+    @apply outline-none w-full block border border-[#6EA9FF] focus:border-[#2e64b4] rounded-[19px] font-gorga-regular text-dark-800 px-6 py-4 pt-[18px] placeholder:font-gorga-light;
+  }
+  .__button {
+    @apply outline-none border-none w-full block rounded-[19px] font-gorga-bold text-white bg-primary px-6 py-4 pt-[18px] hover:bg-primary-hover;
+  }
+  .__link {
+    @apply text-primary font-bold underline hover:no-underline;
+  }
+  .container {
+    @apply mx-auto max-w-[1560px] px-5;
+  }
+}
+
+.login_page_bg {
+  background-image: url("/images/login_page_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+.ReactModal__Content {
+  transform: translateY(calc(-50% + 20px)) translateX(-50%) !important;
+  transition: transform 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Overlay--after-open .ReactModal__Content {
+  transform: translateY(-50%) translateX(-50%) !important;
+}
+
+.ReactModal__Overlay--before-close .ReactModal__Content {
+  transform: translateY(calc(-50% - 20px)) translateX(-50%) !important;
+}
