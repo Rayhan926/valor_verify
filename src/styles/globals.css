@@ -15,9 +15,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-  @apply font-gorga-regular;
-} */
+#__next {
+  @apply max-w-[100vw] overflow-x-hidden;
+}
 
 @layer components {
   .title_60 {
@@ -38,6 +38,9 @@
   .title_24 {
     @apply text-[24px] leading-[32px] font-gorga-bold text-dark-900;
   }
+  .title_18 {
+    @apply text-[18px] leading-[24px] font-gorga-bold text-dark-900;
+  }
   .subtitle_light {
     @apply font-gorga-light text-lg text-dark-800;
   }
@@ -48,7 +51,7 @@
     @apply font-gorga-bold text-lg text-dark-800;
   }
   .__input {
-    @apply outline-none w-full block border border-[#6EA9FF] focus:border-[#2e64b4] rounded-[19px] font-gorga-regular text-dark-800 px-6 py-4 pt-[18px] placeholder:font-gorga-light;
+    @apply outline-none w-full block bg-transparent border rounded-[19px] font-gorga-regular text-dark-800 px-6 py-4 pt-[18px] placeholder:font-gorga-light;
   }
   .__button {
     @apply outline-none border-none w-full block rounded-[19px] font-gorga-bold text-white bg-primary px-6 py-4 pt-[18px] hover:bg-primary-hover;
@@ -90,4 +93,50 @@
 
 .ReactModal__Overlay--before-close .ReactModal__Content {
   transform: translateY(calc(-50% - 20px)) translateX(-50%) !important;
+}
+.primary_gradient {
+  background: linear-gradient(135deg, #e5f1ff, #fff);
+}
+.secondary_gradient {
+  background: linear-gradient(135deg, #fff9e1, #fffef9);
+}
+
+.datePickerWrapper {
+  transition-property: transform, opacity, max-height, border-width;
+  transition-timing-function: ease-out, ease-out, ease, ease;
+  transition-duration: 0.15s, 0.15s, 0s, 0s;
+}
+.datePickerWrapper .rdrMonth,
+.datePickerWrapper .rdrMonthAndYearWrapper {
+  @apply w-full pt-0;
+}
+
+.datePickerWrapper .rdrDateDisplayWrapper {
+  @apply hidden;
+}
+
+.datePickerWrapper .rdrCalendarWrapper {
+  @apply w-full;
+}
+
+.datePickerWrapper .rdrDayDisabled {
+  background: #f5f5f5;
+}
+.datePickerWrapper .rdrSelected {
+  @apply !text-primary border-none;
+}
+.datePickerWrapper .rdrDayNumber > span::after {
+  @apply !hidden !border-none;
+}
+
+.datePickerWrapper
+  .rdrCalendarWrapper:not(.rdrDateRangeWrapper)
+  .rdrDayHovered
+  .rdrDayNumber:after {
+  display: none !important;
+}
+
+.datePickerWrapper .rdrDayNumber {
+  z-index: 2;
+  /* color: #45acd1; */
 }

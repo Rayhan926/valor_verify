@@ -1,11 +1,21 @@
+/*
+ *
+ * Title: Input
+ * Description: --
+ * Author: Saymon
+ * Date: 19 June 2022 (Sunday)
+ *
+ */
 import EyeClosed from "@components/Icons/EyeClosed";
 import EyeOpen from "@components/Icons/EyeOpen";
 import { cx } from "@config/constants";
 import { InputProps } from "@config/types";
 import React, { useId, useRef, useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ id, label, className = "", ...props }, ref) => {
+  (
+    { id, label, className = "", color = "blue", isRequired, ...props },
+    ref,
+  ) => {
     const inputId = useId();
 
     const defaultRef = useRef();
@@ -28,14 +38,30 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       <div>
         {label && (
           <label htmlFor={inputId} className="block text-dark-700 mb-3">
-            {label}
+            {label}{" "}
+            {isRequired && (
+              <span
+                className={cx(
+                  color === "blue" ? "text-[#6EA9FF]" : "text-secondary",
+                )}
+              >
+                *
+              </span>
+            )}
           </label>
         )}
         <div className="relative">
           <input
             ref={resolvedRef}
             id={inputId}
-            className={cx("__input", className, isTypePassword && "pr-[75px]")}
+            className={cx(
+              "__input",
+              className,
+              color === "blue"
+                ? "border-primary-soft focus:border-[#2e64b4]"
+                : "border-secondary-dark focus:border-[#ac8f12]",
+              isTypePassword && "pr-[75px]",
+            )}
             {...props}
           />
 
