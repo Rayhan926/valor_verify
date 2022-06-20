@@ -63,7 +63,7 @@ const DatePickerInput = ({ color, isRequired }: DatePickerInputProps) => {
         </div>
         <div
           className={cx(
-            "absolute top-full left-0 w-full duration-300 datePickerWrapper",
+            "absolute top-full left-0 w-full duration-300 datePickerWrapper z-[5]",
             isOpen
               ? "opacity-100 translate-y-0 pointer-events-auto"
               : "opacity-0 translate-y-5 pointer-events-none",
@@ -72,7 +72,7 @@ const DatePickerInput = ({ color, isRequired }: DatePickerInputProps) => {
           <Calendar
             onChange={(item: any) => dateRangePickerHandleChange(item)}
             date={selectedDate}
-            showMonthAndYearPickers={false}
+            // showMonthAndYearPickers={false}
           />
         </div>
       </div>

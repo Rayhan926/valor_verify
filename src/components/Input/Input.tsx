@@ -13,7 +13,7 @@ import { InputProps } from "@config/types";
 import React, { useId, useRef, useState } from "react";
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (
-    { id, label, className = "", color = "blue", isRequired, ...props },
+    { id, label, className = "", color = "primary", isRequired, ...props },
     ref,
   ) => {
     const inputId = useId();
@@ -42,7 +42,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             {isRequired && (
               <span
                 className={cx(
-                  color === "blue" ? "text-[#6EA9FF]" : "text-secondary",
+                  color === "primary" ? "text-[#6EA9FF]" : "text-secondary",
                 )}
               >
                 *
@@ -57,7 +57,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             className={cx(
               "__input",
               className,
-              color === "blue"
+              color === "primary"
                 ? "border-primary-soft focus:border-[#2e64b4]"
                 : "border-secondary-dark focus:border-[#ac8f12]",
               isTypePassword && "pr-[75px]",

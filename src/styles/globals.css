@@ -60,7 +60,7 @@
     @apply text-primary font-bold underline hover:no-underline;
   }
   .container {
-    @apply mx-auto max-w-[1560px] px-5;
+    @apply mx-auto max-w-[1580px] px-5;
   }
 }
 
@@ -96,6 +96,9 @@
 }
 .primary_gradient {
   background: linear-gradient(135deg, #e5f1ff, #fff);
+}
+.primary_gradient_reverse {
+  background: linear-gradient(135deg, #fff, #e5f1ff);
 }
 .secondary_gradient {
   background: linear-gradient(135deg, #fff9e1, #fffef9);
@@ -138,5 +141,5 @@
 
 .datePickerWrapper .rdrDayNumber {
   z-index: 2;
-  /* color: #45acd1; */
+  /* color: hwb(196 27% 18% / 0.08) */
 }
