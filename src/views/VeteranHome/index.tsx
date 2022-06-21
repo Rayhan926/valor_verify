@@ -1,5 +1,6 @@
 import Header from "@components/Header";
 import DownloadColored from "@components/Icons/DownloadColored";
+import VetStatusCard from "@components/VetStatusCard";
 import { veteranCards } from "@config/constants";
 import React, { ReactNode } from "react";
 import VateranDetailsCard from "./components/VateranDetailsCard";
@@ -15,11 +16,8 @@ const VeteranHome = () => {
           }}
           className="container px-[60px] py-[50px] rounded-[30px] bg-white"
         >
-          <h1 className="title_32 font-gorga-light">Jack William Reynolds</h1>
           <div className="-mt-3 flex items-end gap-10 flex-wrap">
-            <Box label="Birth date" value="08/28/1982" />
-            <Box label="Security Number" value="***-**-3577" />
-            <Box label="Gender" value="Male" />
+            <VetStatusCard />
 
             <button className="secondary_gradient border border-transparent hover:border-secondary duration-150 flex items-center gap-[18px] p-[32px] rounded-[30px] ml-auto">
               <DownloadColored />
@@ -50,14 +48,3 @@ const VeteranHome = () => {
 };
 
 export default VeteranHome;
-
-const Box = ({ label, value }: { label: string; value: ReactNode }) => {
-  return (
-    <div className="border border-primary rounded-full overflow-hidden flex items-center">
-      <div className="bg-shadow-primary rounded-full py-3 px-6 text-dark-700">
-        {label}
-      </div>
-      <div className=" px-7 text-primary/60 text-xl">{value}</div>
-    </div>
-  );
-};
