@@ -1,4 +1,4 @@
-import Button from "@components/Button";
+import a from "@components/Button";
 import { modalStyles } from "@config/constants";
 import React from "react";
 import Modal, { Props } from "react-modal";
@@ -24,7 +24,14 @@ const AccessDD214Modal = ({ isOpen, onRequestClose }: Props) => {
           </p>
         </div>
         <div className="px-[75px] pb-[60px] mt-[80px]">
-          <Button>I Agree, and wish to Access my DD-214</Button>
+          <a
+            className="__button"
+            href="https://sandbox-api.va.gov/oauth2/veteran-verification/v1/authorization?client_id=0oaeybcmn8a62SiaX2p7&redirect_uri=https://d2h99detschoz4.cloudfront.net/home/myprofile.html&response_type=code&scope=profile%20openid%20offline_access%20service_history.read%20disability_rating.read%20veteran_status.read&state=1AOQK33KIfH2g0ADHvU1oWAb7xQY7p6qWnUFiG1ffcUdrbCY1DBAZ3NffrjaoBGQ&nonce=o5jYpLSe29RBHBsn5iAnMKYpYw2Iw9XRBweacc001hRo5xxJEbHuniEbhuxHfVZy"
+            rel="noreferrer"
+            target="_blank"
+          >
+            I Agree, and wish to Access my DD-214
+          </a>
         </div>
       </div>
     </Modal>

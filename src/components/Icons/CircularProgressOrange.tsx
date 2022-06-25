@@ -17,9 +17,9 @@ const CircularProgressOrange = () => {
           y2="0.285"
           gradientUnits="objectBoundingBox"
         >
-          <stop offset="0" stop-color="#f9b035" />
-          <stop offset="0.53" stop-color="#f98c4e" />
-          <stop offset="1" stop-color="#f96767" />
+          <stop offset="0" stopColor="#f9b035" />
+          <stop offset="0.53" stopColor="#f98c4e" />
+          <stop offset="1" stopColor="#f96767" />
         </linearGradient>
       </defs>
       <path

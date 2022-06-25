@@ -30,11 +30,6 @@ const VetHistoryCheck = () => {
                 <p>Of The Veteran</p>
                 Status
               </h1>
-              <p className="subtitle_light mt-[50px] text-sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                <br />
-                industry. Lorem Ipsum has been the industry's
-              </p>
             </div>
 
             <div

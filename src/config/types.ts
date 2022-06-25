@@ -31,7 +31,8 @@ export type VateranDetailsCardProps = {
 
 export type NavType = {
   text: ReactNode;
-  url: string;
+  url?: string;
+  onClick?: () => void;
 };
 
 export type LastSearchType = {
