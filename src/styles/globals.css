@@ -54,7 +54,7 @@
     @apply outline-none w-full block bg-transparent border rounded-[19px] font-gorga-regular text-dark-800 px-6 py-4 pt-[18px] placeholder:font-gorga-light;
   }
   .__button {
-    @apply outline-none border-none w-full block rounded-[19px] font-gorga-bold text-white bg-primary px-6 py-4 pt-[18px] hover:bg-primary-hover;
+    @apply outline-none text-center border-none w-full block rounded-[19px] font-gorga-bold text-white bg-primary px-6 py-4 pt-[18px] hover:bg-primary-hover;
   }
   .__link {
     @apply text-primary font-bold underline hover:no-underline;

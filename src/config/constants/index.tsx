@@ -136,10 +136,6 @@ export const navLinks: NavType[] = [
     text: "Veteran Status",
     url: "/vet-status-check",
   },
-  {
-    text: "Veteran History",
-    url: "/vet-history-check",
-  },
 ];
 
 export const last10Searches: LastSearchType[] = [
