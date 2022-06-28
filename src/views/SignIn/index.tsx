@@ -3,8 +3,10 @@ import Button from "@components/Button";
 import Input from "@components/Input";
 import SigninSignupPageLayout from "@layouts/SigninSignupPageLayout";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const SignIn = () => {
+  const router = useRouter();
   return (
     <SigninSignupPageLayout>
       <div className="px-20 pb-16 pt-16 bg-white rounded-b-[60px]">
@@ -29,7 +31,9 @@ const SignIn = () => {
               </Link>
             </div>
           </div>
-          <Button className="!mt-20">Sign In</Button>
+          <Button onClick={() => router.push("/dashboard")} className="!mt-20">
+            Sign In
+          </Button>
 
           {/* Sign In --Start-- */}
           <p className="text-center !mt-10">

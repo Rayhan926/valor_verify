@@ -1,4 +1,5 @@
 import Button from "@components/Button";
+import EnterInTheWebAsAVeteran from "@components/EnterInTheWebAsAVeteran";
 import ArrowRight from "@components/Icons/ArrowRight";
 import Input from "@components/Input";
 import SigninSignupPageLayout from "@layouts/SigninSignupPageLayout";
@@ -39,6 +40,7 @@ const Signup2 = () => {
           {/* Sign In --End-- */}
         </form>
       </div>
+      <EnterInTheWebAsAVeteran />
     </SigninSignupPageLayout>
   );
 };

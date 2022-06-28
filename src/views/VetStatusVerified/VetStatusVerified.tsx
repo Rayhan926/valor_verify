@@ -1,9 +1,11 @@
 import Button from "@components/Button";
 import HeaderWithNavLinks from "@components/HeaderWithNavLinks";
 import VetStatusCard from "@components/VetStatusCard";
+import { useRouter } from "next/router";
 import React from "react";
 
 const VetStatusVerified = () => {
+  const router = useRouter();
   return (
     <>
       <HeaderWithNavLinks />
@@ -32,7 +34,9 @@ const VetStatusVerified = () => {
             </div>
 
             <div className="w-[790px] mx-auto mt-[60px]">
-              <Button>Check another veteran's Status</Button>
+              <Button onClick={() => router.push("/vet-status-check")}>
+                Check another veteran's Status
+              </Button>
             </div>
           </div>
         </div>

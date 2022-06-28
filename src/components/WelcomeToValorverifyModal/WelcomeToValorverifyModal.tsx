@@ -41,7 +41,12 @@ const WelcomeToValorverifyModal = ({ isOpen, onRequestClose }: Props) => {
           </p>
         </div>
         <div className="px-[60px] mt-[80px]">
-          <a className="__button" href="#" rel="noreferrer">
+          <a
+            className="__button"
+            onClick={onRequestClose}
+            href="#"
+            rel="noreferrer"
+          >
             Let&apos;s Get Started
           </a>
         </div>

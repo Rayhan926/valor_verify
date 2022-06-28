@@ -1,18 +1,31 @@
 import HeaderWithNavLinks from "@components/HeaderWithNavLinks";
-import CircularProgressOrange from "@components/Icons/CircularProgressOrange";
 import CrcularProgress from "@components/Icons/CrcularProgress";
 import MedalStar from "@components/Icons/MedalStar";
 import SecurityTime from "@components/Icons/SecurityTime";
-import { cx, last10Searches } from "@config/constants";
+import WelcomeToValorverifyModal from "@components/WelcomeToValorverifyModal";
+import { cx } from "@config/constants";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SearchColumnRenderer from "./components/SearchColumnRenderer";
 import VeteranStarsStatusBox from "./components/VeteranStarsStatusBox";
 
 const Dashboard = () => {
+  const [openWelcomeToValorverifyModal, setOpenWelcomeToValorverifyModal] =
+    useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setOpenWelcomeToValorverifyModal(true);
+    }, 1000);
+  }, []);
+
   return (
     <>
+      <WelcomeToValorverifyModal
+        isOpen={openWelcomeToValorverifyModal}
+        onRequestClose={() => setOpenWelcomeToValorverifyModal(false)}
+      />
       <HeaderWithNavLinks />
       <section className="mt-[60px]">
         <div className="container">

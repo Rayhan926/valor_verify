@@ -13,9 +13,11 @@ import HeaderWithNavLinks from "@components/HeaderWithNavLinks";
 import Input from "@components/Input";
 import RadioButton from "@components/RadioButton";
 import { APP_NAME } from "@config/constants";
+import { useRouter } from "next/router";
 import React from "react";
 
 const VetHistoryCheck = () => {
+  const router = useRouter();
   return (
     <>
       <HeaderWithNavLinks />
@@ -80,7 +82,9 @@ const VetHistoryCheck = () => {
               </div>
 
               <div className="!mt-20">
-                <Button>Check Status</Button>
+                <Button onClick={() => router.push("/vet-history-result")}>
+                  Check Status
+                </Button>
               </div>
 
               <div className="text-center subtitle_light text-primary/40 !mt-9">

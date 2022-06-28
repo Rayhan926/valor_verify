@@ -1,4 +1,5 @@
 import Button from "@components/Button";
+import EnterInTheWebAsAVeteran from "@components/EnterInTheWebAsAVeteran";
 import ArrowRight from "@components/Icons/ArrowRight";
 import Input from "@components/Input";
 import SigninSignupPageLayout from "@layouts/SigninSignupPageLayout";
@@ -34,12 +35,7 @@ const Signup1 = () => {
         </form>
       </div>
 
-      <Link href="#">
-        <a className="text-center text-secondary my-10 flex items-center justify-center gap-10">
-          Enter In The Web As a Veteran
-          <ArrowRight />
-        </a>
-      </Link>
+      <EnterInTheWebAsAVeteran />
     </SigninSignupPageLayout>
   );
 };

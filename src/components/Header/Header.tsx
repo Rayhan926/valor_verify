@@ -8,6 +8,7 @@
  */
 import HeaderLogo from "@components/HeaderLogo";
 import UserAvatarDropdown from "@components/UserAvatarDropdown";
+import Image from "next/image";
 import React from "react";
 
 const Header = () => {
@@ -18,7 +19,9 @@ const Header = () => {
           <HeaderLogo />
           <UserAvatarDropdown />
         </div>
-        <img
+        <Image
+          width={1540}
+          height={2}
           src="/images/header_bottom_line.svg"
           alt="header_bottom_line"
           className="w-full h-auto"

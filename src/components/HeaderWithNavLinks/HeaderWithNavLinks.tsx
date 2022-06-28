@@ -11,6 +11,7 @@ import HeaderLogo from "@components/HeaderLogo";
 import UserAvatarDropdown from "@components/UserAvatarDropdown";
 import { cx, navLinks } from "@config/constants";
 import { NavType } from "@config/types";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { Fragment, useState } from "react";
@@ -80,7 +81,9 @@ const HeaderWithNavLinks = () => {
 
             <UserAvatarDropdown />
           </div>
-          <img
+          <Image
+            width={1540}
+            height={2}
             src="/images/header_bottom_line.svg"
             alt="header_bottom_line"
             className="w-full h-auto"
