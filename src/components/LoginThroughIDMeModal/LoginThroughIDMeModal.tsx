@@ -1,9 +1,15 @@
 import a from "@components/Button";
 import { APP_NAME, modalStyles } from "@config/constants";
+import { LoginThroughIDMeModalProps } from "@config/types";
 import Image from "next/image";
 import React from "react";
-import Modal, { Props } from "react-modal";
-const LoginThroughIDMeModal = ({ isOpen, onRequestClose }: Props) => {
+import Modal from "react-modal";
+
+const LoginThroughIDMeModal = ({
+  isOpen,
+  onRequestClose,
+  onLoginBtnClick,
+}: LoginThroughIDMeModalProps) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -35,9 +41,12 @@ const LoginThroughIDMeModal = ({ isOpen, onRequestClose }: Props) => {
           </p>
         </div>
         <div className="px-[75px] mt-[80px]">
-          <a className="__button" href="#" rel="noreferrer">
+          <button
+            onClick={onLoginBtnClick && onLoginBtnClick}
+            className="__button"
+          >
             Login or create account through ID.me
-          </a>
+          </button>
         </div>
 
         <p className="text-base text-primary/40 mt-9 text-center">

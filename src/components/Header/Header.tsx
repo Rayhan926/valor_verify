@@ -13,18 +13,18 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="pt-10">
+    <header className="pt-8">
       <div className="container">
-        <div className="flex items-center justify-between mb-9">
+        <div className="flex items-center justify-between mb-7">
           <HeaderLogo />
           <UserAvatarDropdown />
         </div>
         <Image
           width={1540}
           height={2}
+          layout="responsive"
           src="/images/header_bottom_line.svg"
           alt="header_bottom_line"
-          className="w-full h-auto"
         />
       </div>
     </header>

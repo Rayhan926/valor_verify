@@ -12,9 +12,11 @@ import Header from "@components/Header";
 import Input from "@components/Input";
 import RadioButton from "@components/RadioButton";
 import { APP_NAME } from "@config/constants";
+import { useRouter } from "next/router";
 import React from "react";
 
 const AccessDD214Form = () => {
+  const router = useRouter();
   return (
     <>
       <Header />
@@ -82,7 +84,9 @@ const AccessDD214Form = () => {
               </div>
 
               <div className="!mt-20">
-                <Button>Access DD-214 Record</Button>
+                <Button onClick={() => router.push("/veteran-home")}>
+                  Access DD-214 Record
+                </Button>
               </div>
 
               <div className="text-center subtitle_light text-primary/40 !mt-9">

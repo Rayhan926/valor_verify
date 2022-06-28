@@ -34,9 +34,9 @@ const HeaderWithNavLinks = () => {
         isOpen={openAccessDD214Modal}
         onRequestClose={() => setOpenAccessDD214Modal(false)}
       />
-      <header className="pt-10">
+      <header className="pt-8">
         <div className="container">
-          <div className="flex items-center justify-between mb-9">
+          <div className="flex items-center justify-between mb-7">
             <div className="flex items-center gap-[65px]">
               <HeaderLogo />
 
@@ -86,7 +86,7 @@ const HeaderWithNavLinks = () => {
             height={2}
             src="/images/header_bottom_line.svg"
             alt="header_bottom_line"
-            className="w-full h-auto"
+            layout="responsive"
           />
         </div>
       </header>

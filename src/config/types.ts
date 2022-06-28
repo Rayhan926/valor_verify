@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import { Props } from "react-modal";
 
 export type InputProps = {
   label?: ReactNode;
@@ -54,3 +55,7 @@ export type SearchColumnRendererProps = {
   render?: (val: any) => ReactNode;
   className?: string;
 };
+
+export type LoginThroughIDMeModalProps = {
+  onLoginBtnClick?: () => void;
+} & Props;
