@@ -1,6 +1,7 @@
 import Button from "@components/Button";
 import HeaderWithNavLinks from "@components/HeaderWithNavLinks";
 import VetStatusCard from "@components/VetStatusCard";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -12,7 +13,9 @@ const VetStatusVerified = () => {
       <section className="mt-20">
         <div className="container">
           <div className="bg-gradient-to-r from-white via-shadow-primary to-white py-7 flex items-center justify-center gap-10">
-            <div className="w-[190px] h-[190px] bg-slate-200"></div>
+            <div className="w-[190px] h-[190px] bg-slate-50 rounded-full overflow-hidden relative">
+              <Image src="/images/verified.png" layout="fill" alt="Verified" />
+            </div>
             <h1 className="title_40 uppercase">
               <p>Verified</p>
               as a Veteran

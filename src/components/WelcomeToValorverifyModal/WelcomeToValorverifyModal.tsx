@@ -1,8 +1,8 @@
-import a from "@components/Button";
 import { APP_NAME, modalStyles } from "@config/constants";
 import Image from "next/image";
 import React from "react";
 import Modal, { Props } from "react-modal";
+Modal.setAppElement("#__next");
 const WelcomeToValorverifyModal = ({ isOpen, onRequestClose }: Props) => {
   return (
     <Modal
@@ -23,7 +23,7 @@ const WelcomeToValorverifyModal = ({ isOpen, onRequestClose }: Props) => {
           </div>
           <h2 className="title_60 mt-[60px]">
             Welcome
-            <p>
+            <div>
               to <span className="text-secondary">Valorverify!</span>
               <div className="inline-flex items-center translate-y-1.5 ml-8">
                 <Image
@@ -33,7 +33,7 @@ const WelcomeToValorverifyModal = ({ isOpen, onRequestClose }: Props) => {
                   height={59}
                 />
               </div>
-            </p>
+            </div>
           </h2>
           <p className="mt-10 text-[#3F3F44]/70 max-w-[500px]">
             Get started by verifying veterans’ status or accessing veteran

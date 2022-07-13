@@ -26,11 +26,11 @@ const VetHistoryCheck = () => {
           <div className="grid grid-cols-[auto,900px] gap-20 place-items-center">
             <div>
               <h1 className="title_60">
+                <p>Access The</p>
                 <p>
-                  Access The <span className="text-secondary">History</span>
+                  Veteran <span className="text-secondary">History</span>
                 </p>
-                <p>Of The Veteran</p>
-                Status
+                <p>and Status</p>
               </h1>
             </div>
 

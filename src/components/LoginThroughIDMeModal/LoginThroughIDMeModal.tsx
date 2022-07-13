@@ -1,10 +1,9 @@
-import a from "@components/Button";
 import { APP_NAME, modalStyles } from "@config/constants";
 import { LoginThroughIDMeModalProps } from "@config/types";
 import Image from "next/image";
 import React from "react";
 import Modal from "react-modal";
-
+Modal.setAppElement("#__next");
 const LoginThroughIDMeModal = ({
   isOpen,
   onRequestClose,

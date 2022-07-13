@@ -10,15 +10,15 @@ const navs = [
   "/signup2",
   "/reset-password",
   "/forgot-password",
-  "/access-dd-214-form",
-  "/dashboard",
+  // "/access-dd-214-form",
+  // "/dashboard",
   // "/modals",
   "/vet-history-check",
   "/vet-history-result",
   "/vet-status-check",
   "/vet-status-not-verified",
   "/vet-status-verified",
-  "/veteran-home",
+  // "/veteran-home",
 ];
 
 const TemporaryNav = () => {

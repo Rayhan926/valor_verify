@@ -131,7 +131,7 @@ export const veteranCards: VateranDetailsCardProps[] = [
 export const navLinks: NavType[] = [
   {
     text: "Dashboard",
-    url: "/dashboard",
+    url: "#",
   },
   {
     text: "Veteran Status",

@@ -22,10 +22,10 @@ const SigninSignupPageLayout = ({ children }: SigninSignupPageLayout) => {
               Simplified <span className="text-secondary">Experience.</span>
             </p>
           </h1>
-          <p className="subtitle_light text-dark-700 text-sm w-[70%] mx-auto mt-6">
+          {/* <p className="subtitle_light text-dark-700 text-sm w-[70%] mx-auto mt-6">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's{" "}
-          </p>
+          </p> */}
         </div>
       </div>
 

@@ -26,9 +26,8 @@ const VetStatusCheck = () => {
           <div className="grid grid-cols-[auto,900px] gap-20 place-items-center">
             <div>
               <h1 className="title_60">
-                <p>Check Out The</p>
-                <p className="text-secondary">Confirmed Veteran</p>
-                <p className="text-secondary">Status</p>
+                <p className="text-secondary">Confirmed</p>
+                <p className="text-secondary">Veteran Status</p>
               </h1>
             </div>
 

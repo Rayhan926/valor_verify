@@ -1,6 +1,6 @@
 import { cx } from "@config/constants";
 import { VateranDetailsCardProps } from "@config/types";
-import React from "react";
+import React, { Fragment } from "react";
 
 const VateranDetailsCard = ({
   title,
@@ -32,7 +32,7 @@ const VateranDetailsCard = ({
             <table className="w-full border-none border-collapse border-spacing-0">
               <tbody>
                 {lists.map((list, i) => (
-                  <>
+                  <Fragment key={i}>
                     <tr>
                       <td className="font-gorga-light text-[#6666AC]">
                         {list.label}
@@ -42,7 +42,7 @@ const VateranDetailsCard = ({
                       </td>
                     </tr>
                     <tr className="h-3"></tr>
-                  </>
+                  </Fragment>
                 ))}
               </tbody>
             </table>

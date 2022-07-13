@@ -1,7 +1,7 @@
-import a from "@components/Button";
 import { modalStyles } from "@config/constants";
 import React from "react";
 import Modal, { Props } from "react-modal";
+Modal.setAppElement("#__next");
 const AccessDD214Modal = ({ isOpen, onRequestClose }: Props) => {
   return (
     <Modal
